@@ -34,7 +34,7 @@ public class JsonUtil {
 		T obj = newInstance(clazz);
 		JsonAutoDetect jsonAutoDetect = clazz
 				.getAnnotation(JsonAutoDetect.class);
-		Field[] fields = null;
+		Field[] fields = null;  
 		if (jsonAutoDetect.fieldVisbility() == Visibility.NONE) {
 			return obj;
 		} else if (jsonAutoDetect.fieldVisbility() == Visibility.PUBLIC_ONLY) {
